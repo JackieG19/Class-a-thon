@@ -6,7 +6,7 @@
 int sumFibs(num)
 {
     int prevNum = 0;
-    int currNum = 0;
+    int currNum = 1;
     int  total = 0;
 
     while (currNum <= num)
