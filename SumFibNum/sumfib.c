@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <math.h>
 
 
-int sumFibs(int num)
+int sumFibs(num)
 {
     int prevNum = 0;
     int currNum = 0;
     int  total = 0;
+
     while (currNum <= num)
+    {
 
     if (currNum %2 !=0)
     {
@@ -20,17 +23,18 @@ int sumFibs(int num)
         currNum += prevNum;
         prevNum = currNum - prevNum;
     }
-    printf("%i\n");
+    }
+    printf("%i\n", total);
     return total;
 }
 
-int main(void)
+int main(int argc, string argv[])
 {
     int num;
     if (argc ==2)
     {
-    input = atoi(argv[1]);
-    sumFibs(num);
+        num = atoi(argv[1]);
+        sumFibs(num);
     }
     return 0;
 }
