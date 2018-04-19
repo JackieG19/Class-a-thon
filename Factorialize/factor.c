@@ -4,10 +4,10 @@
 #include <cs50.h>
 #include <math.h>
 
-int main(void)
+long long factorialize(input) //long long int is a signed integral type is at least 64 bits
 {
-    int num = 1;
-
+    //int num = 1;
+   long long num;
    for(int i = 0; i < num; i++ ){
     printf("%d\n", num);
    }
@@ -15,7 +15,11 @@ int main(void)
 
     printf("\n");
 }
-//long long int is a signed integral type is at least 64 bits
+
+// int main(int argc, string argv[])
+
+
+
 
 // function factorialize(num) {
 //   var myVar = 1;
