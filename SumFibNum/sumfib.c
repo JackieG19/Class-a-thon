@@ -4,21 +4,34 @@
 
 int sumFibs(int num)
 {
-    int prevNum;
+    int prevNum = 0;
     int currNum = 0;
     int  total = 0;
     while (currNum <= num)
+
+    if (currNum %2 !=0)
     {
-    if (!num)
         total += currNum;
         currNum += prevNum;
         prevNum = currNum - prevNum;
     }
+    else
+    {
+        currNum += prevNum;
+        prevNum = currNum - prevNum;
+    }
+    printf("%i\n");
     return total;
-    printf("Passed\n");
 }
-int main(void) {
-    sumFibs(4);
+
+int main(void)
+{
+    int num;
+    if (argc ==2)
+    {
+    input = atoi(argv[1]);
+    sumFibs(num);
+    }
     return 0;
 }
 
