@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <math.h>
 
-int main(void)
+int sumPrime(num)
 {
     int input = get_int();
     for (int n <= num; n++)
